@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import styles from './navBar.module.css'
 import image from './TechC_Logo.jpg'
-
+import { Link } from 'react-router-dom'
 function NavBar() {
     const [active, setActive] = useState(false)
     const clickHandler = () => {
@@ -33,8 +33,8 @@ function NavBar() {
           <a href={`/`}>
               <img
                 src={image}
-                width={70}
-                height={50}
+                width={60}
+                height={60}
                 alt='Picture of the Council'
                 priority
               />
@@ -61,9 +61,9 @@ function NavBar() {
                 </a>
               </div>
               <div className={styles.option}>
-                <a href={`/`} scroll={false}>
+                <Link to ="/events" scroll={false}>
                   <div>Events</div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className={styles.hamBurgerWrapper}>

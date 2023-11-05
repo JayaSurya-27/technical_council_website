@@ -1,0 +1,212 @@
+* {
+  /* border: 1px solid lime; */
+}
+
+.card {
+  padding: 0 2rem;
+  max-width: 800px;
+  height: fit-content;
+  width: 100%;
+  /* max-height: 400px; */
+  background: black;
+  margin: 8rem auto;
+  /* border-radius: 10px; */
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  display: flex;
+}
+
+.card_left {
+  width: min-content;
+  height: 550px;
+  max-width: 320px;
+  float: left;
+  position: relative;
+  top: -2rem;
+  overflow: hidden;
+  img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.card_left_date {
+  font-size: 4.5rem;
+  color: rgb(176, 175, 175);
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+.card_left_month {
+  font-size: 2rem;
+  color: rgb(176, 175, 175);
+  font-weight: 900;
+}
+
+.card_left_time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card_right {
+  width: 100%;
+  max-width: 480px;
+  float: right;
+  background: #000000;
+  height: min-content; /* should change accordingly */
+  /* border-radius: 0 10px 10px 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_right h1 {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 40px;
+  margin: 30px 0 0 0;
+  padding: 0 0 0 40px;
+  letter-spacing: 1px;
+}
+
+.card_right_details ul {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+  margin: 10px 0 0 0;
+}
+
+.card_right_details li {
+  display: inline;
+  color: #e3e3e3;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 40px 0 0;
+}
+
+.card_right_description p {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-size: 12px;
+  padding: 0 20px 0 20px;
+  letter-spacing: 1px;
+  margin: 10px 0 10px 0;
+  line-height: 20px;
+  text-justify: inter-word;
+}
+
+.card_right_knowmore {
+  padding-bottom: 1rem;
+}
+
+.card_right_knowmore a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 0 0 0 40px;
+  color: #ffda00;
+  margin: 0;
+  cursor: pointer;
+}
+
+.card_right_button {
+  margin: 20px 0 20px 40px;
+}
+
+.card_right_button a {
+  color: #ffda00;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #ffda00;
+  padding: 11px 20px;
+  font-size: 12px;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.card_right_button a:hover {
+  color: #000000;
+  background-color: #ffda00;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.card:hover {
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
+@media (max-width: 810px) {
+    
+  .card {
+    max-width: 600px;
+    box-shadow: none;
+    /* max-height: 700px;  */
+    width: calc(100% - 80px);
+    flex-direction: column;
+    /* margin: 30px auto; */
+
+    align-items: center;
+  }
+
+  .card_left {
+    width: 100%;
+    max-width: none;
+    float: none;
+    height: auto;
+    max-height: none;
+  }
+
+  .card_left img {
+    width: 100%;
+    height: max-content;
+    max-width: none;
+    max-height: none;
+    /* border-radius: 10px 0 0 10px; */
+    object-fit: contain;
+  }
+
+  .card_right {
+    width: 100%;
+    max-width: none;
+    float: none;
+    height: auto;
+  }
+
+  .card_right h1 {
+    padding: 0 20px;
+  }
+
+  .card_right_details ul {
+    padding: 0 20px;
+  }
+
+  .card_right_details li {
+    padding: 0 20px 0 0;
+  }
+
+  .card_right_description p {
+    padding: 0 20px;
+  }
+
+  .card_right_knowmore a,
+  .card_right_button a {
+    padding: 11px 20px;
+  }
+
+  .card_right_button {
+    margin: 30px 0 20px 0;
+    padding-left: 20px;
+  }
+
+}
