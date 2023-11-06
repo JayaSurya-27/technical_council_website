@@ -36,6 +36,7 @@ export default function AppBar() {
                 width={70}
                 height={50}
                 alt='ClubPic'
+
                 priority
               />
             </a>
@@ -62,9 +63,9 @@ export default function AppBar() {
                 </a>
               </div>
               <div className={styles.option}>
-                <a href={`/`} scroll={false}>
+                <Link to ="/events" scroll={false}>
                   <div>Events</div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className={styles.hamBurgerWrapper}>
