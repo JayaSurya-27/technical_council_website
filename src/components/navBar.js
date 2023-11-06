@@ -52,16 +52,16 @@ export default function AppBar() {
                   <div>Clubs</div>
                 </a>
               </div>
-              <div className={styles.option}>
+              {/* <div className={styles.option}>
                 <a href={`/`} scroll={false}>
                   <div>About Us</div>
                 </a>
-              </div>
-              <div className={styles.option}>
+              </div> */}
+              {/* <div className={styles.option}>
                 <a href={`/`} scroll={false}>
                   <div>Members</div>
                 </a>
-              </div>
+              </div> */}
               <div className={styles.option}>
                 <Link to ="/events" scroll={false}>
                   <div>Events</div>
