@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 80%;
-    margin-left: 10%;
+    width:70%;
+    margin-left: 15%;
     margin-top: 5%;
-    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.4);
     /* border-radius: 50px; */
 }
    
@@ -19,19 +19,37 @@
 .card-text{
     padding: 20px;
 }
-   
+
+.card-img .card_2{
+    height:180px !important;
+    width: auto;
+    margin: 20px;
+}
+.last{
+    margin-bottom: 70px;
+}
 @media screen and (min-width: 1024px) {
     .card {
        flex-direction: row;
+       justify-content: flex-start;
     }
    
     .card-img {
-       width: 50%;
+       width: 400px;
+       /* float: left; */
+       left:0;
        /* height: 50%; */
        height: auto;
     }
    
     .card-text {
        width: 50%;
+       /* float: right; */
+       /* right:10px; */
     }
+    /* .card-img .card_2{
+        height:180px !important;
+        width: auto;
+        margin: 20px;
+    } */
 }
