@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './navBar.module.css'
 import image_src from "./TechC_Logo.jpg"
-
+import { Link } from 'react-router-dom'
 export default function AppBar() {
   const [active, setActive] = useState(false)
   const clickHandler = () => {

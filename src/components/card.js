@@ -2,17 +2,8 @@ import "../css/card.css";
 import React from "react";
 
 const Card = (props) => {
-  const {
-    imageUrl,
-    title,
-    date,
-    month,
-    side,
-    venue,
-    description,
-    reviewLink,
-    register,
-  } = props;
+  const { imageUrl, title, date, month, side, venue, description, register } =
+    props;
   if (side === "left") {
     return (
       <div className="card">
