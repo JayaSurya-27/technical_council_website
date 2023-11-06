@@ -38,15 +38,15 @@ function Footer() {
                 </a>
               </div>
             </div>
-  
             <div className={classes.footerContactWrapper}>
+              <div>
               <a
               href='#'
-                className={classes.footerlink}
-                style={{marginBottom:'2rem'}}
+                className={classes.footerlink} style={{fontSize:'1.35rem'}}
               >
                 Conatct Us!
               </a>
+              </div>
               <div>
                 <a
                   href='mailto:tech.council@iitdh.ac.in'

@@ -1,6 +1,8 @@
 .footer {
     background-color:rgb(18,18,18);
     padding: 2.5rem 0;
+    display: flex;
+    flex-direction: row;
   }
   
   .footerDiv {
@@ -8,6 +10,7 @@
     max-width: 1600px;
     margin: auto auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
@@ -60,14 +63,14 @@
   }
   .navLink:hover {
     cursor: pointer;
-    color: var(--primary-white);
+    color:white;
   }
   .footer a {
     text-decoration: none;
     color:white !important;
   }
   .footer a:hover {
-    color: var(--primary-gray) !important;
+    color:white !important;
   }
   
   .rightFooterWrapper {

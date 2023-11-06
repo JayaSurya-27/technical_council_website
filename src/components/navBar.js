@@ -1,56 +1,58 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import styles from './navBar.module.css'
-import image from './TechC_Logo.jpg'
-import { Link } from 'react-router-dom'
-function NavBar() {
-    const [active, setActive] = useState(false)
-    const clickHandler = () => {
-        setActive(prevActive => !prevActive)
-      }
-    
-      const [visible, setVisible] = useState(true)
-      const [previousScrollPosition, setPreviousScrollPosition] = useState(0)
-      useEffect(() => {
-        const handleScroll = () => {
-          const currentScrollPos = window.pageYOffset
-          const visible = previousScrollPosition > currentScrollPos
-    
-          setPreviousScrollPosition(currentScrollPos)
-          setVisible(visible)
-        }
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-      }, [previousScrollPosition])
-    return (
-        <div id='homeId'>
+import image_src from "./TechC_Logo.jpg"
+
+export default function AppBar() {
+  const [active, setActive] = useState(false)
+  const clickHandler = () => {
+    setActive(prevActive => !prevActive)
+  }
+
+  const [visible, setVisible] = useState(true)
+  const [previousScrollPosition, setPreviousScrollPosition] = useState(0)
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY
+      const visible = previousScrollPosition > currentScrollPos
+
+      setPreviousScrollPosition(currentScrollPos)
+      setVisible(visible)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [previousScrollPosition])
+
+  return (
+    <div id='homeId'>
       <nav
         className={styles.navBarWrapper}
         style={{ top: visible ? 0 : '-6rem' }}
       >
         <div className={styles.navBarMain}>
-          <div className={styles.logoWrapper} style={{display:'contents'}}>
-          <a href={`/`}>
+          <div className={styles.logoWrapper}>
+            <a href={`/`}>
               <img
-                src={image}
-                width={60}
-                height={60}
-                alt='Picture of the Council'
+                src={image_src}
+                width={70}
+                height={50}
+                alt='ClubPic'
+
                 priority
               />
             </a>
-            <div className={styles.optionsWrapper}>
+          </div>
+          <div className={styles.optionsWrapper}>
             <div
               className={`${styles.optionsMenu} ${
                 active && styles.activeSidebar
               } font-sans`}
-            ></div>
-            <div className={styles.option}>
-            <a href={`/`} scroll={false}>
+            >
+              <div className={styles.option}>
+                <a href={`/`} scroll={false}>
                   <div>Clubs</div>
                 </a>
-            </div>
-            <div className={styles.option}>
+              </div>
+              <div className={styles.option}>
                 <a href={`/`} scroll={false}>
                   <div>About Us</div>
                 </a>
@@ -79,10 +81,8 @@ function NavBar() {
               </div>
             </div>
           </div>
-          </div>
-        </nav>
         </div>
-    );
+      </nav>
+    </div>
+  )
 }
-
-export default NavBar;

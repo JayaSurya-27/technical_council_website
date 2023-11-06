@@ -5,23 +5,21 @@
   height: 5rem;
   z-index: 99;
   display: flex;
-  /* flex-direction: row; */
   color: var(--text-white);
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  background-color:rgb(18,18,18);
-  border-bottom: 3px solid #000000;
+  background-color: black;
+  border-bottom: 3px solid black;
   /* border-bottom: 3px solid var(--text-black); */
   transition: all 0.2s ease-in-out;
 }
 
 .navBarMain {
   display: flex;
-  flex-direction: row;
   width: 100%;
-  /* max-width: 1600px; */
+  max-width: 1600px;
   padding: 0rem 4rem;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +58,7 @@
 }
 
 .activeOption {
-  color: var(--primary-gray);
+  color: var(--primary-white);
 }
 
 .option::before {
@@ -70,7 +68,7 @@
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: var(--primary-gray);
+  background-color: var(--primary-white);
   transition: all 0.2s ease-in-out;
 }
 
@@ -92,12 +90,12 @@
 }
 
 .spans {
-  display: contents;
+  display: block;
   width: 100%;
 
   border-radius: 3px;
   height: 8px;
-  background: #000000;
+  background: #ffffff;
   transition: all 0.3s;
   position: relative;
 }
@@ -107,7 +105,7 @@
 }
 
 .active .spans {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .active .spans:nth-child(1) {
@@ -244,7 +242,7 @@
   .optionsMenu {
     display: block;
     position: fixed;
-    background-color: #212830;
+    background-color: black;
     top: 0;
     right: -150%;
     color: #000000;
