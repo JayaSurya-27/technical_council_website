@@ -1,0 +1,35 @@
+.members-wrapper {
+  min-height: 100vh;
+  padding-top: 6rem;
+  background-color: rgb(30 30 30);
+  margin-bottom: 0rem;
+  padding-bottom: 3rem;
+}
+/* heading css */
+.member-section {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #dd6a28;
+  margin: 2.5rem auto 0;
+  width: fit-content;
+  font-size: 3vh;
+  font-weight: 500;
+  box-shadow: 4px 4px 10px rgba(139, 13, 13, 0.5);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 3%;
+}
+
+.member-data {
+  display: flex;
+  max-width: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+@media (max-width: 1000px) {
+  .member-data {
+    max-width: 100%;
+  }
+}
