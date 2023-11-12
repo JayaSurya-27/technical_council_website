@@ -1,0 +1,74 @@
+.member_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5%;
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: beige;
+  box-sizing: border-box;
+  transform: translateY(0);
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.member_profile:hover {
+  transform: translateY(-15px);
+  .social_icons {
+    opacity: 1;
+  }
+}
+
+.profile_header {
+  text-align: center;
+  font-size: 2vh;
+}
+
+.profile_photo {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 5%;
+}
+
+.profile_details {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.social_icons a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 3vh;
+  transition: color 0.3s;
+}
+/* hover color here */
+.social_icons a:hover {
+  color: #dd6a28;
+}
+
+@media (max-width: 1000px) {
+  .profile_photo {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 5%;
+  }
+}
