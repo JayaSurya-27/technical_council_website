@@ -38,6 +38,7 @@ const Events = () => {
       {selectedTab === "current" && (
         <>
           <h1 className="event-heading">Current Events</h1>
+          <div className="events">
           {currentEvent.map((event) => {
             // Convert the "event_date" string to a Date object
             const eventDate = new Date(event.event_date);
@@ -60,12 +61,14 @@ const Events = () => {
               />
             );
           })}
+          </div>
         </>
       )}
 
       {selectedTab === "past" && (
         <>
           <h1 className="event-heading">Past Events</h1>
+          <div className="events">
           {pastEvent.map((event) => {
             // Convert the "event_date" string to a Date object
             const eventDate = new Date(event.event_date);
@@ -88,6 +91,7 @@ const Events = () => {
               />
             );
           })}
+          </div>
         </>
       )}
     </>

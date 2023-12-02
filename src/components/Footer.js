@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram} from '@fortawesome/free-brands-svg-icons'
-import image from './TechC_Logo.jpg'
+import image from './Logo.png'
 
 function Footer() {
     const date = new Date()
