@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Card from "./components/card";
 import NavBar from "./components/navBar";
 import Home from "./pages/home";
 import Events from "./pages/events";
@@ -13,6 +14,7 @@ const App = () => {
       <Router>
         <ApiState>
           <NavBar/>
+          <Card/>
           {/* <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
