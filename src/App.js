@@ -14,12 +14,16 @@ const App = () => {
       <Router>
         <ApiState>
           <NavBar/>
+<<<<<<< HEAD
           <Card/>
           {/* <Routes>
+=======
+          <Routes>
+>>>>>>> 8bd59ce22b357f26f2258bc980af646fbb4d38c0
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
             <Route path="/Members" element={<Members />} />
-            </Routes>*/}
+            </Routes>
             <Footer />
         </ApiState>
       </Router>
