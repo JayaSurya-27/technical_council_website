@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Card from "../components/card";
+import Card from "../components/clubCard";
 import '../css/events.css';
 // import { useApi } from "../context/apiState";
 const Events = () => {
