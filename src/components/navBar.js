@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './navBar.module.css'
-import image_src from "./TechC_Logo.jpg"
-
+import image_src from "./Logo.png"
+import { Link } from 'react-router-dom'
 export default function AppBar() {
   const [active, setActive] = useState(false)
   const clickHandler = () => {
@@ -52,16 +52,16 @@ export default function AppBar() {
                   <div>Clubs</div>
                 </a>
               </div>
-              <div className={styles.option}>
+              {/* <div className={styles.option}>
                 <a href={`/`} scroll={false}>
                   <div>About Us</div>
                 </a>
-              </div>
-              <div className={styles.option}>
+              </div> */}
+              {/* <div className={styles.option}>
                 <a href={`/`} scroll={false}>
                   <div>Members</div>
                 </a>
-              </div>
+              </div> */}
               <div className={styles.option}>
                 <a to ="/events" scroll={false}>
                   <div>Events</div>
