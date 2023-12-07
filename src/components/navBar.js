@@ -63,9 +63,9 @@ export default function AppBar() {
                 </a>
               </div> */}
               <div className={styles.option}>
-                <Link to ="/events" scroll={false}>
+                <a to ="/events" scroll={false}>
                   <div>Events</div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className={styles.hamBurgerWrapper}>
